@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "TaskPulse PM",
+  "version": "1.0",
+  "description": "A task management extension for project managers",
+  "permissions": [
+    "storage",
+    "notifications",
+    "tabs",
+    "alarms"
+  ],
+  "browser_action": {
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "scripts": ["lib/taskManager.js", "background.js"],
+    "persistent": false
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab/newtab.html"
+  },
+  "icons": {
+    "48": "icons/icon.png",
+    "128": "icons/icon2.png"
+  }
+}
